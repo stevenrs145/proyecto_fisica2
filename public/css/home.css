@@ -1,0 +1,79 @@
+
+  .bg  {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-40deg, rgb(37, 45, 59)50%, black 50%); /*-40deg is the angle of the cut and 50% is how much of the color takes up the screen*/
+    bottom:0;
+    top:0;
+    left:-50%;
+    opacity:.8;
+    position:fixed;
+    right:-50%;
+    z-index:-1;
+  }
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+    background-image: linear-gradient(-40deg, rgb(80, 104, 114) 50%, grey 50%);
+  }
+  .bg3 {
+    animation-duration:5s;
+  }
+  .content {
+    background-color:rgba(0, 0, 0, 0.568);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    padding:3vmin;
+    position:fixed;
+    text-align:center;
+    transform:translate(-50%, -50%);
+  }
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+
+  .content-wrapper {
+    background-color: transparent !important;
+}
+.caratula-contenedor{
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo{
+    width: 20rem;
+    height: auto;
+    left: 30%;
+    top: 30%;
+    filter: blur(1px);
+    position: absolute;
+
+}
+.caratula-text1{
+    color: #fff;
+    font-size: 30px;
+}
+.caratula-img{
+    color: #fff;
+    font-size: 30px;
+    
+}
+.caratula-text2{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 500px;
+}
+.titulo-principal{
+    color: #fff;
+    font-size: 70px !important;
+    position: absolute;
+    left: 46%;
+    top: 50%;
+}
